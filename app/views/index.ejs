@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="twitterApp">
+
+<head>
+    <title>Twitter App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.css">
+    <script src="js/jquery-1.12.0.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/angular.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div ng-controller="navCtrl">
+            <div ng-include="'app/navigation/navbar.tpl.html'">
+
+            </div>
+            <div ng-include="selectedTemplate">
+
+            </div>
+        </div>
+    </div>
+
+    <script src="app/app.js"></script>
+    <script src="app/navigation/navCtrl.js"></script>
+    <script src="app/users/userSvc.js"></script>
+    <script src="app/users/userCtrl.js"></script>
+    <script src="app/login/loginCtrl.js"></script>
+</body>
+
+</html>
